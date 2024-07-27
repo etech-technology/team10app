@@ -11,5 +11,10 @@ pipeline{
                 sh 'cat /etc/passwd'
             }
         }
+        stage('3-disk-usage'){
+            steps{
+                sh 'du -h'
+            }
+        }
     }
 }
